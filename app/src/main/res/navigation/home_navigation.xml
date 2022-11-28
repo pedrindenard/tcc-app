@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/home_fragment">
+
+    <fragment
+        android:id="@+id/home_fragment"
+        tools:layout="@layout/fragment_notification"
+        android:label="home_fragment" />
+
+    <fragment
+        android:id="@+id/tcc_fragment"
+        tools:layout="@layout/fragment_tcc"
+        android:label="tcc_fragment" />
+
+    <fragment
+        android:id="@+id/library_fragment"
+        tools:layout="@layout/fragment_library"
+        android:label="library_fragment" />
+
+    <fragment
+        android:id="@+id/profile_fragment"
+        tools:layout="@layout/fragment_profile"
+        android:label="profile_fragment" />
+
+</navigation>

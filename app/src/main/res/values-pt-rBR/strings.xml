@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">TCC URI</string>
+
+    <string name="hint_login">Login</string>
+    <string name="hint_profile">Perfil</string>
+    <string name="hint_register">Registrar</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Senha</string>
+    <string name="hint_full_name">Nome completo</string>
+    <string name="hint_about">Descrição breve sobre você…</string>
+    <string name="hint_personal">Sobre</string>
+    <string name="hint_cpf">CPF</string>
+    <string name="hint_description">Senha (min 8 dígitos, maiúsculo, minúsculo)</string>
+    <string name="hint_course">Curso</string>
+    <string name="hint_select">Selecionar…</string>
+    <string name="hint_birth_date">Data de nascimento</string>
+
+    <string name="radio_student">Estudante</string>
+    <string name="radio_teacher">Professor</string>
+    <string name="radio_system">Sistema</string>
+
+    <string name="button_login_title">Entrar</string>
+    <string name="button_register_title">Registrar</string>
+    <string name="button_save_title">Salvar</string>
+
+    <string name="button_register_description"><u>Novo por aqui? Cadastre-se</u></string>
+    <string name="button_login_description"><u>Já possuí uma conta? Entrar</u></string>
+
+    <string name="hint_chat">Chat</string>
+    <string name="hint_update">Atualizar</string>
+    <string name="hint_archive">Arquivo</string>
+    <string name="hint_advisor">Orientador</string>
+    <string name="hint_brief">Breve descrição sobre o tema do TCC</string>
+    <string name="hint_resume">Resumo</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_tcc">TCC</string>
+    <string name="hint_create">Criar</string>
+    <string name="no_message_available">No message available</string>
+</resources>

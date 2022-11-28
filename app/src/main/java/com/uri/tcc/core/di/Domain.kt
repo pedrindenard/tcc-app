@@ -10,20 +10,5 @@ object Domain {
         single {
             Retrofit.getStudentInstance(context = androidContext())
         }
-        single {
-            Retrofit.getTeacherInstance(context = androidContext())
-        }
-        single {
-            Retrofit.getOrientationInstance(context = androidContext())
-        }
-        single {
-            Retrofit.getTccInstance(context = androidContext())
-        }
-        single {
-            Retrofit.getCourseInstance(context = androidContext())
-        }
-        single {
-            Retrofit.getLibraryInstance(context = androidContext())
-        }
     }
 }

@@ -36,5 +36,23 @@
     <string name="hint_title">Title</string>
     <string name="hint_tcc">TCC</string>
     <string name="hint_create">Create</string>
+    <string name="hint_message">Message</string>
+
     <string name="no_message_available">No message available</string>
+
+    <string name="message_email_empty">Email cannot be empty</string>
+    <string name="message_class_id_empty">Class cannot be empty</string>
+    <string name="message_name_empty">Name cannot be empty</string>
+    <string name="message_cpf_empty">Legal document cannot be empty</string>
+    <string name="message_password_empty">Password cannot be empty</string>
+
+    <string name="message_email_invalid">Email invalid</string>
+    <string name="message_name_invalid">Name invalid</string>
+    <string name="message_cpf_invalid">Legal document invalid</string>
+    <string name="message_password_invalid">Password invalid</string>
+
+    <string name="library_tab_course">Course</string>
+    <string name="library_tab_title">Title</string>
+    <string name="library_tab_area">Area</string>
+    <string name="library_search">Search</string>
 </resources>

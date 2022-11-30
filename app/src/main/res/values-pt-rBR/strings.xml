@@ -36,5 +36,23 @@
     <string name="hint_title">Título</string>
     <string name="hint_tcc">TCC</string>
     <string name="hint_create">Criar</string>
-    <string name="no_message_available">No message available</string>
+    <string name="hint_message">Mensagem</string>
+
+    <string name="no_message_available">Nenhuma mensagem disponível</string>
+
+    <string name="message_email_empty">Email não pode ser vazio</string>
+    <string name="message_class_id_empty">Classe não pode ser vazio</string>
+    <string name="message_name_empty">Nome não pode ser vazio</string>
+    <string name="message_cpf_empty">CPF não pode ser vazio</string>
+    <string name="message_password_empty">Senha não pode ser vazio</string>
+
+    <string name="message_email_invalid">Email inválido</string>
+    <string name="message_name_invalid">Nome inválido</string>
+    <string name="message_cpf_invalid">CPF inválido</string>
+    <string name="message_password_invalid">Senha inválido</string>
+
+    <string name="library_tab_course">Curso</string>
+    <string name="library_tab_title">Título</string>
+    <string name="library_tab_area">Area</string>
+    <string name="library_search">Pesquisa</string>
 </resources>

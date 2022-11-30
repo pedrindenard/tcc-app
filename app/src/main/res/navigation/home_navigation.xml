@@ -7,22 +7,26 @@
 
     <fragment
         android:id="@+id/home_fragment"
-        tools:layout="@layout/fragment_notification"
-        android:label="home_fragment" />
+        android:name="com.uri.tcc.feature.presentation.fragment.message.MessageFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/fragment_message" />
 
     <fragment
         android:id="@+id/tcc_fragment"
-        tools:layout="@layout/fragment_tcc"
-        android:label="tcc_fragment" />
+        android:name="com.uri.tcc.feature.presentation.fragment.tcc.TccFragment"
+        android:label="tcc_fragment"
+        tools:layout="@layout/fragment_tcc" />
 
     <fragment
         android:id="@+id/library_fragment"
-        tools:layout="@layout/fragment_library"
-        android:label="library_fragment" />
+        android:name="com.uri.tcc.feature.presentation.fragment.library.LibraryFragment"
+        android:label="library_fragment"
+        tools:layout="@layout/fragment_library" />
 
     <fragment
         android:id="@+id/profile_fragment"
-        tools:layout="@layout/fragment_profile"
-        android:label="profile_fragment" />
+        android:name="com.uri.tcc.feature.presentation.fragment.profile.ProfileFragment"
+        android:label="profile_fragment"
+        tools:layout="@layout/fragment_profile" />
 
 </navigation>

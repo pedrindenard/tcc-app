@@ -1,25 +1,25 @@
 package com.uri.tcc.core.di
 
-import com.uri.tcc.feature.repository.LibraryRepository
-import com.uri.tcc.feature.repository.NotificationRepository
-import com.uri.tcc.feature.repository.TccRepository
-import com.uri.tcc.feature.repository.UserRepository
+import com.uri.tcc.feature.data.repository.ClassAllRepository
+import com.uri.tcc.feature.data.repository.MessageRepository
+import com.uri.tcc.feature.data.repository.TccRepository
+import com.uri.tcc.feature.data.repository.UserRepository
 import org.koin.dsl.module
 
 object Repository {
 
     val module = module(override = true) {
         single {
-            UserRepository(api = get())
+            UserRepository(api = get(), sharedPreferences = get())
         }
         single {
-            NotificationRepository(api = get())
+            MessageRepository(api = get(), sharedPreferences = get())
         }
         single {
             TccRepository(api = get())
         }
         single {
-            LibraryRepository(api = get())
+            ClassAllRepository(api = get())
         }
     }
 }

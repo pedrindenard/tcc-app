@@ -51,7 +51,7 @@
     <string name="message_cpf_invalid">Legal document invalid</string>
     <string name="message_password_invalid">Password invalid</string>
 
-    <string name="library_tab_course">Course</string>
+    <string name="library_tab_course">Class</string>
     <string name="library_tab_title">Title</string>
     <string name="library_tab_area">Area</string>
     <string name="library_search">Search</string>

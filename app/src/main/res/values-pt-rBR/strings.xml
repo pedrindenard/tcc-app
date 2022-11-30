@@ -51,7 +51,7 @@
     <string name="message_cpf_invalid">CPF inválido</string>
     <string name="message_password_invalid">Senha inválido</string>
 
-    <string name="library_tab_course">Curso</string>
+    <string name="library_tab_course">Classe</string>
     <string name="library_tab_title">Título</string>
     <string name="library_tab_area">Area</string>
     <string name="library_search">Pesquisa</string>

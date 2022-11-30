@@ -69,7 +69,7 @@ class MessageAdapter : RecyclerView.Adapter<MessageAdapter.ViewHolder>() {
                 binding.personMessage.text = message.text
                 binding.personDate.text = message.createdAt.formatToDate()
 
-                binding.root.setOnLongClickListener {
+                binding.personView.setOnLongClickListener {
                     onLongClickListener.onLongClick(absoluteAdapterPosition)
                     false
                 }
@@ -81,7 +81,7 @@ class MessageAdapter : RecyclerView.Adapter<MessageAdapter.ViewHolder>() {
                 binding.personMessage.text = message.text
                 binding.personDate.text = message.createdAt.formatToDate()
 
-                binding.root.setOnLongClickListener {
+                binding.personView.setOnLongClickListener {
                     onLongClickListener.onLongClick(absoluteAdapterPosition)
                     false
                 }

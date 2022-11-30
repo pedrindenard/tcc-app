@@ -126,9 +126,7 @@ class MessageFragment : Fragment() {
             is MessageAdapter.Messages.Right -> item.text
         }
 
-        mainDialog.arguments = Bundle().apply { putString("message", message) }
         mainDialog.show(requireActivity().supportFragmentManager, "")
-
         mainDialog.setOnClickListener(object : MessageDialog.ClickListener {
             override fun onClick(text: String) {
                 viewModel.doUpdateMessage(
@@ -141,6 +139,10 @@ class MessageFragment : Fragment() {
                         )
                     }
                 )
+            }
+
+            override fun setFieldMessage() {
+                mainDialog.insertInputFieldMessage(message)
             }
         })
     }

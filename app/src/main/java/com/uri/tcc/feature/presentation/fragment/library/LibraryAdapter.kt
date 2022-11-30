@@ -9,7 +9,7 @@ import com.uri.tcc.utils.LibraryMock
 
 class LibraryAdapter : RecyclerView.Adapter<LibraryAdapter.ViewHolder>() {
 
-    val items = arrayListOf<LibraryMock.Library>()
+    private val items = arrayListOf<LibraryMock.Library>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(

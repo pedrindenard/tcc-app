@@ -10,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.uri.tcc.databinding.DialogEditMessageBinding
+import com.uri.tcc.utils.CountDownTimer
 import com.uri.tcc.utils.StringFormat.toEditable
 
 class MessageDialog : BottomSheetDialogFragment() {
@@ -40,9 +41,9 @@ class MessageDialog : BottomSheetDialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        clickListener.setFieldMessage()
         setDecorViewListener()
         setListeners()
-        setMessage()
     }
 
     private fun setListeners() {
@@ -51,11 +52,6 @@ class MessageDialog : BottomSheetDialogFragment() {
             clickListener.onClick(message)
             dismiss()
         }
-    }
-
-    private fun setMessage() {
-        val message = requireArguments().getString("message")
-        binding.messageInput.text = message!!.toEditable()
     }
 
     private fun setDecorViewListener() {
@@ -70,11 +66,23 @@ class MessageDialog : BottomSheetDialogFragment() {
         }
     }
 
+    fun insertInputFieldMessage(message: String) {
+        CountDownTimer.getDelayMillis(100) {
+            binding.messageInput.text = message.toEditable()
+        }
+    }
+
     fun setOnClickListener(mClickListener: ClickListener) {
         clickListener = mClickListener
     }
 
     interface ClickListener {
         fun onClick(text: String)
+        fun setFieldMessage()
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
